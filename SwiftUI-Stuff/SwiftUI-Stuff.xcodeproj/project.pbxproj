@@ -19,6 +19,7 @@
 		8F0962CC2C0A48F600018872 /* Color+Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0962CB2C0A48F600018872 /* Color+Random.swift */; };
 		8F0962CE2C0A497300018872 /* View+Debug.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0962CD2C0A497300018872 /* View+Debug.swift */; };
 		8F0962D02C0A49DE00018872 /* Stack+Alignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0962CF2C0A49DE00018872 /* Stack+Alignment.swift */; };
+		8F0962D32C0A500900018872 /* MoneyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0962D22C0A500900018872 /* MoneyApp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		8F0962CB2C0A48F600018872 /* Color+Random.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Random.swift"; sourceTree = "<group>"; };
 		8F0962CD2C0A497300018872 /* View+Debug.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Debug.swift"; sourceTree = "<group>"; };
 		8F0962CF2C0A49DE00018872 /* Stack+Alignment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Stack+Alignment.swift"; sourceTree = "<group>"; };
+		8F0962D22C0A500900018872 /* MoneyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyApp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 		8F0962AF2C0A422800018872 /* SwiftUI-Stuff */ = {
 			isa = PBXGroup;
 			children = (
+				8F0962D12C0A4FF700018872 /* MoneyApp */,
 				8F0962CA2C0A48D400018872 /* Extensions */,
 				8F0962C02C0A432400018872 /* 3DButton */,
 				8F0962C32C0A47E500018872 /* Equalizer */,
@@ -113,6 +116,14 @@
 				8F0962CF2C0A49DE00018872 /* Stack+Alignment.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8F0962D12C0A4FF700018872 /* MoneyApp */ = {
+			isa = PBXGroup;
+			children = (
+				8F0962D22C0A500900018872 /* MoneyApp.swift */,
+			);
+			path = MoneyApp;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,6 +206,7 @@
 				8F0962C52C0A482A00018872 /* EqualizerView.swift in Sources */,
 				8F0962C92C0A48A300018872 /* PistolView.swift in Sources */,
 				8F0962B12C0A422800018872 /* SwiftUI_StuffApp.swift in Sources */,
+				8F0962D32C0A500900018872 /* MoneyApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
