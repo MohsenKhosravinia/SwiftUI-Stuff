@@ -10,11 +10,14 @@ import SwiftUI
 
 enum Item: String, CaseIterable {
     case button3D
+    case equalizerAnimation
     
     var title: String {
         switch self {
         case .button3D:
             return "3D Button"
+        case .equalizerAnimation:
+            return "Equalizer animation"
         }
     }
     
@@ -23,6 +26,8 @@ enum Item: String, CaseIterable {
         switch self {
         case .button3D:
             Button3D()
+        case .equalizerAnimation:
+            EmptyView()
         }
     }
 }

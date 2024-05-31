@@ -13,6 +13,12 @@
 		8F0962B72C0A422900018872 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F0962B62C0A422900018872 /* Assets.xcassets */; };
 		8F0962BA2C0A422900018872 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F0962B92C0A422900018872 /* Preview Assets.xcassets */; };
 		8F0962C22C0A436700018872 /* Button3D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0962C12C0A436700018872 /* Button3D.swift */; };
+		8F0962C52C0A482A00018872 /* EqualizerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0962C42C0A482A00018872 /* EqualizerView.swift */; };
+		8F0962C72C0A484E00018872 /* PistolStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0962C62C0A484E00018872 /* PistolStack.swift */; };
+		8F0962C92C0A48A300018872 /* PistolView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0962C82C0A48A300018872 /* PistolView.swift */; };
+		8F0962CC2C0A48F600018872 /* Color+Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0962CB2C0A48F600018872 /* Color+Random.swift */; };
+		8F0962CE2C0A497300018872 /* View+Debug.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0962CD2C0A497300018872 /* View+Debug.swift */; };
+		8F0962D02C0A49DE00018872 /* Stack+Alignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0962CF2C0A49DE00018872 /* Stack+Alignment.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +29,12 @@
 		8F0962B62C0A422900018872 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8F0962B92C0A422900018872 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8F0962C12C0A436700018872 /* Button3D.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button3D.swift; sourceTree = "<group>"; };
+		8F0962C42C0A482A00018872 /* EqualizerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EqualizerView.swift; sourceTree = "<group>"; };
+		8F0962C62C0A484E00018872 /* PistolStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PistolStack.swift; sourceTree = "<group>"; };
+		8F0962C82C0A48A300018872 /* PistolView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PistolView.swift; sourceTree = "<group>"; };
+		8F0962CB2C0A48F600018872 /* Color+Random.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Random.swift"; sourceTree = "<group>"; };
+		8F0962CD2C0A497300018872 /* View+Debug.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Debug.swift"; sourceTree = "<group>"; };
+		8F0962CF2C0A49DE00018872 /* Stack+Alignment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Stack+Alignment.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +67,9 @@
 		8F0962AF2C0A422800018872 /* SwiftUI-Stuff */ = {
 			isa = PBXGroup;
 			children = (
-				8F0962C02C0A432400018872 /* Button3D */,
+				8F0962CA2C0A48D400018872 /* Extensions */,
+				8F0962C02C0A432400018872 /* 3DButton */,
+				8F0962C32C0A47E500018872 /* Equalizer */,
 				8F0962B02C0A422800018872 /* SwiftUI_StuffApp.swift */,
 				8F0962B22C0A422800018872 /* MainView.swift */,
 				8F0962B42C0A422800018872 /* Item.swift */,
@@ -73,12 +87,32 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		8F0962C02C0A432400018872 /* Button3D */ = {
+		8F0962C02C0A432400018872 /* 3DButton */ = {
 			isa = PBXGroup;
 			children = (
 				8F0962C12C0A436700018872 /* Button3D.swift */,
 			);
-			path = Button3D;
+			path = 3DButton;
+			sourceTree = "<group>";
+		};
+		8F0962C32C0A47E500018872 /* Equalizer */ = {
+			isa = PBXGroup;
+			children = (
+				8F0962C42C0A482A00018872 /* EqualizerView.swift */,
+				8F0962C62C0A484E00018872 /* PistolStack.swift */,
+				8F0962C82C0A48A300018872 /* PistolView.swift */,
+			);
+			path = Equalizer;
+			sourceTree = "<group>";
+		};
+		8F0962CA2C0A48D400018872 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8F0962CB2C0A48F600018872 /* Color+Random.swift */,
+				8F0962CD2C0A497300018872 /* View+Debug.swift */,
+				8F0962CF2C0A49DE00018872 /* Stack+Alignment.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,9 +185,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F0962CC2C0A48F600018872 /* Color+Random.swift in Sources */,
+				8F0962CE2C0A497300018872 /* View+Debug.swift in Sources */,
 				8F0962C22C0A436700018872 /* Button3D.swift in Sources */,
 				8F0962B32C0A422800018872 /* MainView.swift in Sources */,
+				8F0962D02C0A49DE00018872 /* Stack+Alignment.swift in Sources */,
 				8F0962B52C0A422800018872 /* Item.swift in Sources */,
+				8F0962C72C0A484E00018872 /* PistolStack.swift in Sources */,
+				8F0962C52C0A482A00018872 /* EqualizerView.swift in Sources */,
+				8F0962C92C0A48A300018872 /* PistolView.swift in Sources */,
 				8F0962B12C0A422800018872 /* SwiftUI_StuffApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
